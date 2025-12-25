@@ -1,1 +1,10 @@
+version: "3.8"
+
+services:
+  system-monitor:
+    build: .
+    container_name: system-monitor
+    ports:
+      - "5000:3000"
+    restart: unless-stopped
 
